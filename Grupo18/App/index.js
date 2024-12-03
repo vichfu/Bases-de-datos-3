@@ -1,5 +1,5 @@
 const express = require('express');
-const pool = require('./db'); // Configuración de la base de datos
+const pool = require('./db');
 const app = express();
         
 app.use(express.static('public'));          
