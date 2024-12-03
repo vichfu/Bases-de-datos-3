@@ -1,0 +1,22 @@
+.col{
+padding-left: 20%;
+padding-right: 20%;
+}
+a{
+    text-decoration: none;
+    color: rgb(21, 172, 119);
+}
+#result {
+    border-radius: 25px;
+    margin-top: 2%;
+    padding: 3%;
+    background-color: rgb(53, 53, 53);
+    color: coral;
+}
+ul.list-group #delete a{
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+ul.list-group  a{
+    text-decoration: none;
+}

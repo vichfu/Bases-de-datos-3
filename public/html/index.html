@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultas para la base de Datos</title>
+  <link href="../styles/navbar.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav id="navbar" class="navbar navbar-expand-sm navbar-light bg-light">
+  </nav>
+
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Consultas de Base de Datos</h1>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <button class="btn btn-primary w-100" onclick="consultar('cancion_mayor_recaudacion')">
+          Canción con Mayor Recaudación
+        </button>
+      </div>
+      <div class="col">
+        <button class="btn btn-primary w-100" onclick="consultar('recaudacion_conciertos_2024')">
+          Recaudación de Conciertos en 2024
+        </button>
+      </div>
+      <div class="col">
+        <button class="btn btn-primary w-100" onclick="consultar('miembro_mayor_sueldo')">
+          Miembro con Mayor Sueldo
+        </button>
+      </div>
+      <div class="col">
+        <button class="btn btn-primary w-100" onclick="consultar('concierto_mayor_asistencia')">
+          Concierto con Mayor Asistencia
+        </button>
+      </div>
+      <div class="col">
+        <button class="btn btn-primary w-100" onclick="consultar('top_3_canciones_reproducciones')">
+          Top 3 Canciones por Reproducciones
+        </button>
+      </div>
+      <div class="col">
+        <button class="btn btn-primary w-100" onclick="consultar('conciertos_menos_1100_asistentes')">
+          Conciertos con Menos de 1100 Asistentes
+        </button>
+      </div>
+      <div class="col">
+        <button class="btn btn-primary w-100" onclick="consultar('conciertos_mayor_coste')">
+          Conciertos con Mayor Coste
+        </button>
+      </div>
+      <div class="col">
+        <button class="btn btn-primary w-100" onclick="consultar('albumes_mas_costosos')">
+          Álbumes Más Costosos
+        </button>
+      </div>
+      <div class="col">
+        <button class="btn btn-primary w-100" onclick="consultar('reproducciones_totales_albumes')">
+          Reproducciones Totales por Álbum
+        </button>
+      </div>
+      <div class="col">
+        <button class="btn btn-primary w-100" onclick="consultar('total_reproducciones_y_recaudacion')">
+          Reproducciones y Recaudaciones Totales
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    function consultar(consulta) {
+      window.location.href = `/consultas/${consulta}`;
+    }
+  </script>
+  <script src="../js/navbar.js"></script>
+</body>
+</html>
